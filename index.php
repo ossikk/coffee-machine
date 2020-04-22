@@ -12,21 +12,21 @@
   </head>
   <body>
     <div class="container">
-      <div class="row coffee-machine">
+      <div class="row coffee-machine" id="coffee">
         <div class="col-6 coffee-list d-flex flex-column justify-content-around">
-          <div class="coffee-item">
+          <div class="coffee-item" onclick="buyCoffee('Американо', 50, this)">
             <img src="img/americano.png" alt="americano">
             <span>Американо - 50 руб.</span>
           </div>
-          <div class="coffee-item">
+          <div class="coffee-item"onclick="buyCoffee('Капучино', 128, this)">
             <img src="img/cappuccino.png" alt="cappuccino">
             <span>Капучино - 128 руб.</span>
           </div>
-          <div class="coffee-item">
+          <div class="coffee-item"onclick="buyCoffee('Эспрессо', 66, this)">
             <img src="img/espresso.png" alt="espresso">
             <span>Эспрессо - 66 руб.</span>
           </div>
-          <div class="coffee-item">
+          <div class="coffee-item"onclick="buyCoffee('Латте', 128, this)">
             <img src="img/latte2.png" alt="latte">
             <span>Латте - 128 руб.</span>
           </div>
@@ -37,12 +37,11 @@
               <div class="display">
                 <p class="display-text">Выберите кофе</p>
                 <div class="progress">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-                  </div>
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
                 </div>
               </div>
               <div class="coffee-cup">
-                <img src="img/americano.png" alt="americano">
+                <img class="d-none" src="#" alt="#">
               </div>
             </div>
             <div class="col-6">
@@ -62,8 +61,9 @@
         </div>
       </div>
     </div> 
-    
     <!-- Optional JavaScript -->
+    <script src="script.js"></script>
+    <script src="coffee.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

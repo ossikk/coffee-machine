@@ -37,8 +37,9 @@
   padding: 15px;
 }
 
-.coffee-cup img{
+.coffee-cup img {
   width: 100%;
+  opacity: 0;
 }
 
 .atm img {
